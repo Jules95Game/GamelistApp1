@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GamelistApp1.Domain\GamelistApp1.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
