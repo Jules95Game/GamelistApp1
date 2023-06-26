@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamelistApp1.TestConsole", "GamelistApp1.TestConsole\GamelistApp1.TestConsole.csproj", "{1ECA3FAE-52FC-4836-9B61-DE5AA52FA9A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamelistApp1.TestConsole", "GamelistApp1.TestConsole\GamelistApp1.TestConsole.csproj", "{1ECA3FAE-52FC-4836-9B61-DE5AA52FA9A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Apps", "3. Apps", "{98A367F5-8039-456B-9EB9-54CAC02D68D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Business", "1. Business", "{1F7B905A-8E25-4E1C-AA25-95064F7ECC2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Tests", "2. Tests", "{D4CBF785-C992-4A39-8648-67DE2D3C4A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +24,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1ECA3FAE-52FC-4836-9B61-DE5AA52FA9A1} = {98A367F5-8039-456B-9EB9-54CAC02D68D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B756FFD4-B3BF-4F6F-A32B-53388B43C56C}
