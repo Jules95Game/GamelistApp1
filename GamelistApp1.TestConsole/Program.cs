@@ -1,10 +1,12 @@
-﻿namespace GamelistApp1.TestConsole
+﻿namespace GamelistApp1.TestConsole;
+
+internal class Program
 {
-    internal class Program
+    private static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Hello, World!");
+        Console.ReadLine();
     }
 }
