@@ -1,5 +1,11 @@
-﻿namespace GamelistApp1.DataAccess;
+﻿using GamelistApp1.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
-public class DataContext
+namespace GamelistApp1.DataAccess;
+
+public class DataContext : DbContext
 {
+    public DbSet<Game> Games { get; set; }
+
+    public DataContext(DbContextOptions options) : base(options) { }
 }
