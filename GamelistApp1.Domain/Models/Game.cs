@@ -19,6 +19,6 @@ public class Game : IEntity
     [MaxLength(500)]
     public string? Description { get; set; }
 
-    [MaxLength(16)]
+    [MaxLength(32)]
     public required string Platform { get; set; }
 }
