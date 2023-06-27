@@ -10,11 +10,6 @@ internal class Program
 {
     private static void Main()
     {
-        Console.ReadLine();
-        Console.Clear();
-        Console.WriteLine("Hello, World!");
-        Console.ReadLine();
-
         IHost host = Host.CreateDefaultBuilder()
             .ConfigureServices(services =>
             {
@@ -24,6 +19,7 @@ internal class Program
             .Build();
 
         List<Game> games = host.Services.GetRequiredService<DataContext>().Games.ToList();
+        Console.ReadLine();
         foreach (Game game in games)
         {
             Console.WriteLine($"{game.Title}\t- {game.Developer}\t- {game.Platform}");
