@@ -10,9 +10,9 @@ public interface IService<TEntity> where TEntity : IEntity
 
     public TEntity? GetById(int id);
 
-    public TEntity Create(TEntity entity);
+    public TEntity? Create(TEntity entity);
 
-    public TEntity Update(TEntity entity);
+    public TEntity? Update(TEntity entity);
 
     public void Delete(int id);
 }

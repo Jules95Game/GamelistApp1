@@ -25,12 +25,12 @@ public class GameService : IService<Game>
         throw new NotImplementedException();
     }
 
-    public Game Create(Game entity)
+    public Game? Create(Game entity)
     {
         throw new NotImplementedException();
     }
 
-    public Game Update(Game entity)
+    public Game? Update(Game entity)
     {
         throw new NotImplementedException();
     }
