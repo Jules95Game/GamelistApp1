@@ -5,38 +5,33 @@ namespace GamelistApp1.Business.Services;
 
 public class GameService : IService<Game>
 {
-    public List<Game> GetAll()
-    {
-        throw new NotImplementedException();
-    }
+    private readonly IRepository<Game> _repository;
 
-    public List<Game> GetTop100()
-    {
-        throw new NotImplementedException();
-    }
+    public GameService(IRepository<Game> repository) => _repository = repository;
 
-    public List<Game> SearchByQuery(string query)
-    {
-        throw new NotImplementedException();
-    }
+    public List<Game> GetAll() => _repository.GetAll().ToList();
 
-    public Game? GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
+    public List<Game> GetTop100() => _repository.GetAll().Take(100).ToList();
 
-    public Game? Create(Game entity)
-    {
-        throw new NotImplementedException();
-    }
+    public List<Game> SearchByQuery(string query) => _repository.GetAll()
+        .Where(x => x.Title.ToLower().Contains(query.ToLower())
+        || (x.Description != null && x.Description.ToLower().Contains(query.ToLower()))
+        || x.Publisher.ToLower().Contains(query.ToLower()))
+        .ToList();
 
-    public Game? Update(Game entity)
-    {
-        throw new NotImplementedException();
-    }
+    public Game? GetById(int id) => _repository.GetById(id).SingleOrDefault();
 
-    public void Delete(int id)
-    {
-        throw new NotImplementedException();
-    }
+    public Game? Create(Game entity) => _repository.GetAll()
+        .Where(x => x.Title == entity.Title && x.Platform == entity.Platform)
+        .SingleOrDefault() != null
+            ? _repository.Create(entity)
+            : null;
+
+    public Game? Update(Game entity) => _repository.GetAll()
+        .Where(x => x.Title == entity.Title && x.Platform == entity.Platform)
+        .SingleOrDefault() == null
+            ? _repository.Update(entity)
+            : null;
+
+    public void Delete(int id) => _repository.Delete(id);
 }
