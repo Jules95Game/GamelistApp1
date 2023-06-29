@@ -8,7 +8,7 @@ public interface IService<TEntity> where TEntity : IEntity
 
     public List<TEntity> SearchByQuery(string query);
 
-    public TEntity GetById(int id);
+    public TEntity? GetById(int id);
 
     public TEntity Create(TEntity entity);
 

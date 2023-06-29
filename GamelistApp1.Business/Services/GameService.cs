@@ -20,7 +20,7 @@ public class GameService : IService<Game>
         throw new NotImplementedException();
     }
 
-    public Game GetById(int id)
+    public Game? GetById(int id)
     {
         throw new NotImplementedException();
     }
