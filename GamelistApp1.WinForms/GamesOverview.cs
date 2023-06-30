@@ -44,7 +44,7 @@ namespace GamelistApp1.WinForms
 
             FillListBox();
         }
-        
+
         private void FillListBox()
         {
             foreach (Game game in _gameList)

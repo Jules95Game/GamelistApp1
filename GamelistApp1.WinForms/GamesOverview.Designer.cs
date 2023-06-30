@@ -48,7 +48,7 @@
             // 
             searchBox.Location = new Point(12, 12);
             searchBox.Name = "searchBox";
-            searchBox.Size = new Size(200, 23);
+            searchBox.Size = new Size(275, 23);
             searchBox.TabIndex = 0;
             // 
             // listBox1
@@ -57,23 +57,23 @@
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(12, 41);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(200, 394);
+            listBox1.Size = new Size(275, 394);
             listBox1.TabIndex = 1;
             // 
             // btnAdd
             // 
             btnAdd.Location = new Point(12, 451);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(97, 23);
+            btnAdd.Size = new Size(135, 23);
             btnAdd.TabIndex = 2;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnRemove
             // 
-            btnRemove.Location = new Point(115, 451);
+            btnRemove.Location = new Point(153, 451);
             btnRemove.Name = "btnRemove";
-            btnRemove.Size = new Size(97, 23);
+            btnRemove.Size = new Size(134, 23);
             btnRemove.TabIndex = 3;
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(262, 44);
+            lblTitle.Location = new Point(331, 44);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(32, 15);
             lblTitle.TabIndex = 4;
@@ -90,7 +90,7 @@
             // lblPlat
             // 
             lblPlat.AutoSize = true;
-            lblPlat.Location = new Point(238, 73);
+            lblPlat.Location = new Point(307, 73);
             lblPlat.Name = "lblPlat";
             lblPlat.Size = new Size(56, 15);
             lblPlat.TabIndex = 4;
@@ -99,7 +99,7 @@
             // lblDev
             // 
             lblDev.AutoSize = true;
-            lblDev.Location = new Point(231, 102);
+            lblDev.Location = new Point(300, 102);
             lblDev.Name = "lblDev";
             lblDev.Size = new Size(63, 15);
             lblDev.TabIndex = 4;
@@ -108,7 +108,7 @@
             // lblPub
             // 
             lblPub.AutoSize = true;
-            lblPub.Location = new Point(235, 131);
+            lblPub.Location = new Point(304, 131);
             lblPub.Name = "lblPub";
             lblPub.Size = new Size(59, 15);
             lblPub.TabIndex = 4;
@@ -116,50 +116,50 @@
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(300, 41);
+            txtTitle.Location = new Point(369, 41);
             txtTitle.Name = "txtTitle";
             txtTitle.ReadOnly = true;
-            txtTitle.Size = new Size(547, 23);
+            txtTitle.Size = new Size(478, 23);
             txtTitle.TabIndex = 5;
             // 
             // txtPlat
             // 
-            txtPlat.Location = new Point(300, 70);
+            txtPlat.Location = new Point(369, 70);
             txtPlat.Name = "txtPlat";
             txtPlat.ReadOnly = true;
-            txtPlat.Size = new Size(547, 23);
+            txtPlat.Size = new Size(478, 23);
             txtPlat.TabIndex = 5;
             // 
             // txtDev
             // 
-            txtDev.Location = new Point(300, 99);
+            txtDev.Location = new Point(369, 99);
             txtDev.Name = "txtDev";
             txtDev.ReadOnly = true;
-            txtDev.Size = new Size(547, 23);
+            txtDev.Size = new Size(478, 23);
             txtDev.TabIndex = 5;
             // 
             // txtPub
             // 
-            txtPub.Location = new Point(300, 128);
+            txtPub.Location = new Point(369, 128);
             txtPub.Name = "txtPub";
             txtPub.ReadOnly = true;
-            txtPub.Size = new Size(547, 23);
+            txtPub.Size = new Size(478, 23);
             txtPub.TabIndex = 5;
             // 
             // txtDesc
             // 
-            txtDesc.Location = new Point(300, 157);
+            txtDesc.Location = new Point(369, 157);
             txtDesc.Multiline = true;
             txtDesc.Name = "txtDesc";
             txtDesc.ReadOnly = true;
             txtDesc.ScrollBars = ScrollBars.Vertical;
-            txtDesc.Size = new Size(547, 322);
+            txtDesc.Size = new Size(478, 322);
             txtDesc.TabIndex = 6;
             // 
             // lblDesc
             // 
             lblDesc.AutoSize = true;
-            lblDesc.Location = new Point(224, 160);
+            lblDesc.Location = new Point(293, 160);
             lblDesc.Name = "lblDesc";
             lblDesc.Size = new Size(70, 15);
             lblDesc.TabIndex = 7;
