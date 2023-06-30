@@ -21,11 +21,13 @@ namespace GamelistApp1.WinForms
     public partial class GamesOverview : Form
     {
         private readonly IHost _host;
+        private readonly IService<Game> _gameService;
+        private List<Game> _gameList;
 
         public GamesOverview()
         {
             InitializeComponent();
-            
+
             _host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
@@ -35,6 +37,10 @@ namespace GamelistApp1.WinForms
                     services.AddScoped<IService<Game>, GameService>();
                 })
                 .Build();
+
+            _gameService = _host.Services.GetRequiredService<IService<Game>>();
+
+            _gameList = _gameService.GetAll();
         }
     }
 }
