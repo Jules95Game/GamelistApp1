@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GamelistApp1.Business\GamelistApp1.Business.csproj" />
+  </ItemGroup>
+
 </Project>
