@@ -41,6 +41,16 @@ namespace GamelistApp1.WinForms
             _gameService = _host.Services.GetRequiredService<IService<Game>>();
 
             _gameList = _gameService.GetAll();
+
+            FillListBox();
+        }
+        
+        private void FillListBox()
+        {
+            foreach (Game game in _gameList)
+            {
+                listBox1.Items.Add(game.Title);
+            }
         }
     }
 }
