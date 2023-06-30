@@ -32,6 +32,16 @@
             listBox1 = new ListBox();
             btnAdd = new Button();
             btnRemove = new Button();
+            lblTitle = new Label();
+            lblPlat = new Label();
+            lblDev = new Label();
+            lblPub = new Label();
+            txtTitle = new TextBox();
+            txtPlat = new TextBox();
+            txtDev = new TextBox();
+            txtPub = new TextBox();
+            txtDesc = new TextBox();
+            lblDesc = new Label();
             SuspendLayout();
             // 
             // searchBox
@@ -68,11 +78,108 @@
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
             // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(262, 44);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(32, 15);
+            lblTitle.TabIndex = 4;
+            lblTitle.Text = "Title:";
+            // 
+            // lblPlat
+            // 
+            lblPlat.AutoSize = true;
+            lblPlat.Location = new Point(238, 73);
+            lblPlat.Name = "lblPlat";
+            lblPlat.Size = new Size(56, 15);
+            lblPlat.TabIndex = 4;
+            lblPlat.Text = "Platform:";
+            // 
+            // lblDev
+            // 
+            lblDev.AutoSize = true;
+            lblDev.Location = new Point(231, 102);
+            lblDev.Name = "lblDev";
+            lblDev.Size = new Size(63, 15);
+            lblDev.TabIndex = 4;
+            lblDev.Text = "Developer:";
+            // 
+            // lblPub
+            // 
+            lblPub.AutoSize = true;
+            lblPub.Location = new Point(235, 131);
+            lblPub.Name = "lblPub";
+            lblPub.Size = new Size(59, 15);
+            lblPub.TabIndex = 4;
+            lblPub.Text = "Publisher:";
+            // 
+            // txtTitle
+            // 
+            txtTitle.Location = new Point(300, 41);
+            txtTitle.Name = "txtTitle";
+            txtTitle.ReadOnly = true;
+            txtTitle.Size = new Size(547, 23);
+            txtTitle.TabIndex = 5;
+            // 
+            // txtPlat
+            // 
+            txtPlat.Location = new Point(300, 70);
+            txtPlat.Name = "txtPlat";
+            txtPlat.ReadOnly = true;
+            txtPlat.Size = new Size(547, 23);
+            txtPlat.TabIndex = 5;
+            // 
+            // txtDev
+            // 
+            txtDev.Location = new Point(300, 99);
+            txtDev.Name = "txtDev";
+            txtDev.ReadOnly = true;
+            txtDev.Size = new Size(547, 23);
+            txtDev.TabIndex = 5;
+            // 
+            // txtPub
+            // 
+            txtPub.Location = new Point(300, 128);
+            txtPub.Name = "txtPub";
+            txtPub.ReadOnly = true;
+            txtPub.Size = new Size(547, 23);
+            txtPub.TabIndex = 5;
+            // 
+            // txtDesc
+            // 
+            txtDesc.Location = new Point(300, 157);
+            txtDesc.Multiline = true;
+            txtDesc.Name = "txtDesc";
+            txtDesc.ReadOnly = true;
+            txtDesc.ScrollBars = ScrollBars.Vertical;
+            txtDesc.Size = new Size(547, 322);
+            txtDesc.TabIndex = 6;
+            // 
+            // lblDesc
+            // 
+            lblDesc.AutoSize = true;
+            lblDesc.Location = new Point(224, 160);
+            lblDesc.Name = "lblDesc";
+            lblDesc.Size = new Size(70, 15);
+            lblDesc.TabIndex = 7;
+            lblDesc.Text = "Description:";
+            // 
             // GamesOverview
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(859, 486);
+            Controls.Add(lblDesc);
+            Controls.Add(txtDesc);
+            Controls.Add(txtPub);
+            Controls.Add(txtDev);
+            Controls.Add(txtPlat);
+            Controls.Add(txtTitle);
+            Controls.Add(lblPub);
+            Controls.Add(lblDev);
+            Controls.Add(lblPlat);
+            Controls.Add(lblTitle);
             Controls.Add(btnRemove);
             Controls.Add(btnAdd);
             Controls.Add(listBox1);
@@ -91,5 +198,15 @@
         private ListBox listBox1;
         private Button btnAdd;
         private Button btnRemove;
+        private Label lblTitle;
+        private Label lblPlat;
+        private Label lblDev;
+        private Label lblPub;
+        private TextBox txtTitle;
+        private TextBox txtPlat;
+        private TextBox txtDev;
+        private TextBox txtPub;
+        private TextBox txtDesc;
+        private Label lblDesc;
     }
 }
